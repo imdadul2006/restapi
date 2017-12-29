@@ -1,0 +1,12 @@
+{
+  "firstName":"",
+  "lastName":"",
+  "email":"",
+  "phoneNumber":"",
+  "userRole":"ROLE_ADMIN",
+  "userStatus":"ENABLED",
+  "password":"sangbe",
+  "username":"imdadul-ts",
+  "description":"",
+  "customerId":165825
+}
