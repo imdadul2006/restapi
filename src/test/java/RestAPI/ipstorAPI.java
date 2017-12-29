@@ -35,8 +35,7 @@ public class ipstorAPI {
    */
     @Test (priority = 1)
     public void getAllPhysicalResource() throws IOException {
-        //Response getPhyResource =
-        JsonPath jPhysicalResource = CommonAPI.commonGet(ApiResource.getenumAdapters());//DataParser.rawToJSON(getPhyResource);
+        JsonPath jPhysicalResource = CommonAPI.commonGet(ApiResource.getenumAdapters());
         adapterList = jPhysicalResource.get("data.physicaladapters.id");
         System.out.println("Respond : rc = "+jPhysicalResource.get("rc"));
         Assert.assertEquals(jPhysicalResource.get("rc"),0);
@@ -45,9 +44,15 @@ public class ipstorAPI {
 
     @Test (priority = 1)
     public void getAllPhysicalDevice() throws IOException {
-        //Response getAllPhysicalDevices =
-        JsonPath jPhysicalDevices= CommonAPI.commonGet(ApiResource.getEnumPhysicalDevices());//DataParser.rawToJSON(getAllPhysicalDevices );
+        JsonPath jPhysicalDevices= CommonAPI.commonGet(ApiResource.getEnumPhysicalDevices());
         physicalDeviceList = jPhysicalDevices.get("data.physicaldevices.id");
+
+        System.out.println("=====================================");
+        for (String x:physicalDeviceList) {
+            System.out.println(x);
+        }
+        System.out.println("=====================================");
+
         System.out.println("Respond : rc = "+jPhysicalDevices.get("rc"));
         Assert.assertEquals(jPhysicalDevices.get("rc"),0);
 
@@ -55,9 +60,7 @@ public class ipstorAPI {
 
     @Test(priority = 1)
     public void getClientInitiator() throws IOException {
-       // CommonAPI.setBaseURI();
-       // Response res =  //given().cookie("session_id", CommonAPI.getSessionID()).log().uri().get(ApiResource.getClientInitiator()).then().log().all().extract().response();
-        JsonPath json= CommonAPI.commonGet(ApiResource.getClientInitiator());//DataParser.rawToJSON(res);
+        JsonPath json= CommonAPI.commonGet(ApiResource.getClientInitiator());
         Assert.assertEquals(json.get("rc"),0);
     }
 
@@ -69,29 +72,26 @@ public class ipstorAPI {
 
     @Test(priority = 1)
     public void getFCTargetPort() throws IOException {
-       // Response res =  //given().cookie("session_id", CommonAPI.getSessionID()).log().uri().get(ApiResource.getClientInitiator()).then().log().all().extract().response();
-        JsonPath json=CommonAPI.commonGet(ApiResource.getFCbasePort()) ;// DataParser.rawToJSON(res);
+      JsonPath json=CommonAPI.commonGet(ApiResource.getFCbasePort()) ;
         Assert.assertEquals(json.get("rc"),0);
     }
 
     @Test(priority = 1)
     public void getEnumUnassignedPhysicalDevices() throws IOException {
-        //Response res =  //given().cookie("session_id", CommonAPI.getSessionID()).log().uri().get(ApiResource.getClientInitiator()).then().log().all().extract().response();
-        JsonPath json= CommonAPI.commonGet(ApiResource.getEnumPhysicalDevices());//DataParser.rawToJSON(res);
+        JsonPath json= CommonAPI.commonGet(ApiResource.getEnumPhysicalDevices());
         Assert.assertEquals(json.get("rc"),0);
     }
 
     @Test(priority = 1)
     public void getEnumeleligibleTarget() throws IOException {
-      //  Response res =  //given().cookie("session_id", CommonAPI.getSessionID()).log().uri().get(ApiResource.getClientInitiator()).then().log().all().extract().response();
-        JsonPath json= CommonAPI.commonGet(ApiResource.getEnumeleligibleTarget());//DataParser.rawToJSON(res);
-        Assert.assertEquals(json.get("rc"),0);;
+        JsonPath json= CommonAPI.commonGet(ApiResource.getEnumeleligibleTarget());
+        Assert.assertEquals(json.get("rc"),0);
     }
 
     @Test(priority = 1)
     public void getEnumStoragePool() throws IOException {
         JsonPath json= CommonAPI.commonGet(ApiResource.getEnumStoragePool());
-        Assert.assertEquals(json.get("rc"),0);;
+        Assert.assertEquals(json.get("rc"),0);
     }
 
     @Test(priority = 2)
@@ -99,8 +99,7 @@ public class ipstorAPI {
         for(int i : adapterList) {
             System.out.println("=======Adapter Number "+i+" ==============");
             System.out.println();
-           // Response getPhyResource =
-            JsonPath jPhysicalResource = CommonAPI.commonGet(ApiResource.getaAdapter(i));//DataParser.rawToJSON(getPhyResource);
+            JsonPath jPhysicalResource = CommonAPI.commonGet(ApiResource.getaAdapter(i));
             System.out.println("Respond : rc = "+jPhysicalResource.get("rc"));
             Assert.assertEquals(jPhysicalResource.get("rc"), 0);
             if(i>=100)
@@ -109,13 +108,12 @@ public class ipstorAPI {
         }
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2,dependsOnMethods = {"getAllPhysicalDevice"})
     public void getPhysicalDevicePath() throws IOException {
         for(String i : physicalDeviceList) {
             System.out.println("=======Physical Disk ID "+i+" ==============");
             System.out.println();
-           // Response getPhyResource =
-            JsonPath jPhysicalResource = CommonAPI.commonGet(ApiResource.getPhyiscalDevicePath(i));//DataParser.rawToJSON(getPhyResource);
+            JsonPath jPhysicalResource = CommonAPI.commonGet(ApiResource.getPhyiscalDevicePath(i));
             System.out.println("Respond : rc = "+jPhysicalResource.get("rc"));
             Assert.assertEquals(jPhysicalResource.get("rc"), 0);
         }
@@ -126,8 +124,7 @@ public class ipstorAPI {
         for(String i : physicalDeviceList) {
             System.out.println("=======Physical Disk ID "+i+" ==============");
             System.out.println();
-           // Response getPhyResource = ;
-            JsonPath jPhysicalResource = CommonAPI.commonGet(ApiResource.getPhysicalDevices(i));//DataParser.rawToJSON(getPhyResource);
+            JsonPath jPhysicalResource = CommonAPI.commonGet(ApiResource.getPhysicalDevices(i));
             System.out.println("Respond : rc = "+jPhysicalResource.get("rc"));
             Assert.assertEquals(jPhysicalResource.get("rc"), 0);
         }
