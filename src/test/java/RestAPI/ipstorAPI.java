@@ -52,7 +52,6 @@ public class ipstorAPI {
             System.out.println(x);
         }
         System.out.println("=====================================");
-
         System.out.println("Respond : rc = "+jPhysicalDevices.get("rc"));
         Assert.assertEquals(jPhysicalDevices.get("rc"),0);
 
