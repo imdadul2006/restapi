@@ -16,12 +16,12 @@ public class ManageTest extends Base {
 
     @BeforeClass
     public void setUP() throws IOException {
-        driver = getLocalDriver("Windows","chrome");
+        driver = getLocalDriver("Windows", "chrome");
         setUp("http://10.6.11.161");
     }
 
     @Test
-    public void Login(){
+    public void Login() {
         MainLogin hp = new MainLogin(driver);
         hp.getUserName().sendKeys("superadmin");
         hp.getPassword().sendKeys("freestor");
@@ -29,17 +29,29 @@ public class ManageTest extends Base {
         waitUntilClickAble(hp.getTopMenu());
         hp.navigateElement("Manage").click();
 
+        Manage man = new Manage(driver);
+        waitUntilClickAble(man.getMiddleBar());
+        man.serverSeletion("FSS-116").click();
+        man.navigateElement("Settings").click();
 
-        driver.findElement(By.xpath("html/body/div[1]/div/div[1]/div[2]/ul/li[3]/div[1]")).click();
+        man.navigateSetup("FC/iSCSI Target Mode").click();
+
+    }
+
+    @Test
+    public void Login2() {
+        MainLogin hp = new MainLogin(driver);
+        hp.getUserName().sendKeys("superadmin");
+        hp.getPassword().sendKeys("freestor");
+        hp.getLoginButton().click();
+        waitUntilClickAble(hp.getTopMenu());
+        hp.navigateElement("Manage").click();
 
         Manage man = new Manage(driver);
         waitUntilClickAble(man.getMiddleBar());
-        man.navigateElement("Virtual Devices").click();
-        man.getCreate().click();
+        man.serverSeletion("FSS-119").click();
+        man.navigateElement("Settings").click();
 
-        ManageCreateDevice manDevic = new ManageCreateDevice(driver);
-        waitUntilClickAble(manDevic.getCreate());
-        manDevic.getSanDiskName().sendKeys("MyTestDisk");
-
+        man.navigateSetup("FC/iSCSI Target Mode").click();
     }
 }

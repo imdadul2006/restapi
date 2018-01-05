@@ -2,10 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28505aa6-1578-4c7e-80df-3b4ec26a4a42" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_27.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_10.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_beanshell_bsh_2_0b4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_6_8.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_6.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/comFreestor.iml" afterPath="$PROJECT_DIR$/comFreestor.iml" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RestAPI/ipstorAPI.java" afterPath="$PROJECT_DIR$/src/test/java/RestAPI/ipstorAPI.java" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/RestAPI/ipstorAPI.class" afterPath="$PROJECT_DIR$/target/test-classes/RestAPI/ipstorAPI.class" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/Resources/ExtentReporterNG.java" afterPath="$PROJECT_DIR$/src/main/java/ExReport/ExtentReporterNG.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/Manage.java" afterPath="$PROJECT_DIR$/src/main/java/PageObject/Manage.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPI/ApiResource.java" afterPath="$PROJECT_DIR$/src/main/java/RestAPI/ApiResource.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GUI/ManageTest.java" afterPath="$PROJECT_DIR$/src/test/java/GUI/ManageTest.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObject/Manage.class" afterPath="$PROJECT_DIR$/target/classes/PageObject/Manage.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RestAPI/ApiResource.class" afterPath="$PROJECT_DIR$/target/classes/RestAPI/ApiResource.class" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/GUI/ManageTest.class" afterPath="$PROJECT_DIR$/target/test-classes/GUI/ManageTest.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,45 +29,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ipstorAPI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/RestAPI/ipstorAPI.java">
+      <file leaf-file-name="ManageTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/GUI/ManageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="34" column="5" lean-forward="false" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+            <state relative-caret-position="358">
+              <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#getAllPhysicalResource#0;class#ipstorAPI#0" expanded="false" />
-                <element signature="method#getAllPhysicalDevice#0;class#ipstorAPI#0" expanded="false" />
-                <element signature="method#getClientInitiator#0;class#ipstorAPI#0" expanded="false" />
-                <element signature="method#getFCbasePort#0;class#ipstorAPI#0" expanded="false" />
-                <element signature="method#getFCTargetPort#0;class#ipstorAPI#0" expanded="false" />
-                <element signature="method#getEnumUnassignedPhysicalDevices#0;class#ipstorAPI#0" expanded="false" />
-                <element signature="method#getEnumeleligibleTarget#0;class#ipstorAPI#0" expanded="false" />
-                <element signature="method#getEnumStoragePool#0;class#ipstorAPI#0" expanded="false" />
-                <element signature="method#getPhysicalResource#0;class#ipstorAPI#0" expanded="false" />
-                <element signature="method#getPhysicalDevicePath#0;class#ipstorAPI#0" expanded="false" />
-                <element signature="method#getPhysicalDevices#0;class#ipstorAPI#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApiResource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/RestAPI/ApiResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExtentReporterNG.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/Resources/ExtentReporterNG.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -88,22 +68,27 @@
       <list>
         <option value="$PROJECT_DIR$/src/test/Resource/AddUser.json" />
         <option value="$PROJECT_DIR$/src/test/Resource/AddServer.json" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/PageObject/MainLogin.java" />
-        <option value="$PROJECT_DIR$/src/main/java/PageObject/Manage.java" />
         <option value="$PROJECT_DIR$/src/main/java/PageObject/ManageCreateDevice.java" />
-        <option value="$PROJECT_DIR$/src/test/java/GUI/ManageTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/GUI/Base.java" />
         <option value="$PROJECT_DIR$/src/main/java/RestAPI/DataParser.java" />
         <option value="$PROJECT_DIR$/src/test/Resource/info.properties" />
         <option value="$PROJECT_DIR$/src/test/java/RestAPI/TempTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/RestAPI/ApiResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/RestAPI/CommonAPI.java" />
         <option value="$PROJECT_DIR$/src/test/Resource/env.properties" />
         <option value="$PROJECT_DIR$/src/test/Resource/loginServer.json" />
         <option value="$PROJECT_DIR$/src/test/java/RestAPI/ipstorAPI.java" />
         <option value="$PROJECT_DIR$/src/main/java/Resources/ExtentReporterNG.java" />
         <option value="$PROJECT_DIR$/src/main/java/Resources/a.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PageObject/Manage.java" />
+        <option value="$PROJECT_DIR$/RestAPITest.xml" />
+        <option value="$PROJECT_DIR$/GUITest.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Reports/ExtentReporterNG.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ExtentReports/ExtentReporterNG.java" />
+        <option value="$PROJECT_DIR$/src/main/java/RestAPI/ApiResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ExReport/ExtentReporterNG.java" />
+        <option value="$PROJECT_DIR$/src/test/java/GUI/ManageTest.java" />
       </list>
     </option>
   </component>
@@ -115,8 +100,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="34" />
-    <option name="y" value="331" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1260" />
     <option name="height" value="624" />
   </component>
@@ -136,9 +121,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -157,18 +140,40 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="comFreestor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="comFreestor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="comFreestor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="comFreestor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="GUI" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\IdeaProjects\comFreestor\src\main\java\Reports" />
+      <recent name="C:\Users\Administrator\IdeaProjects\comFreestor\src\test\Resource" />
       <recent name="C:\Users\Administrator\IdeaProjects\comFreestor\src\main" />
       <recent name="C:\Users\Administrator\IdeaProjects\comFreestor\src\main\java" />
     </key>
@@ -185,7 +190,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ipstorAPI">
+  <component name="RunManager" selected="TestNG.ManageTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -436,11 +441,11 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.ipstorAPI" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.ipstorAPI.getAllPhysicalDevice" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.ipstorAPI.getPhysicalDevicePath" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.ipstorAPI.getFCbasePort" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.ManageTest" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.ManageTest" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.ipstorAPI" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.ipstorAPI.getAllPhysicalDevice" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.ipstorAPI.getPhysicalDevicePath" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.ipstorAPI.getFCbasePort" />
       </list>
     </recent_temporary>
   </component>
@@ -469,29 +474,29 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ipstorAPI - 2017.12.28 at 17h 55m 31s.xml">
+    <history-entry file="ManageTest - 2018.01.04 at 12h 20m 44s.xml">
+      <configuration name="ManageTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ManageTest - 2018.01.04 at 12h 22m 34s.xml">
+      <configuration name="ManageTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ManageTest - 2018.01.04 at 14h 21m 26s.xml">
+      <configuration name="ManageTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ManageTest - 2018.01.04 at 14h 22m 52s.xml">
+      <configuration name="ManageTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ManageTest - 2018.01.04 at 16h 12m 47s.xml">
+      <configuration name="ManageTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ManageTest - 2018.01.04 at 16h 15m 44s.xml">
+      <configuration name="ManageTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ManageTest - 2018.01.05 at 12h 08m 57s.xml">
+      <configuration name="ManageTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ipstorAPI - 2018.01.05 at 10h 42m 42s.xml">
       <configuration name="ipstorAPI" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ipstorAPI - 2017.12.28 at 18h 07m 14s.xml">
-      <configuration name="ipstorAPI" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ipstorAPI - 2017.12.29 at 14h 22m 35s.xml">
-      <configuration name="ipstorAPI" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ipstorAPI_getAllPhysicalDevice - 2017.12.29 at 14h 11m 30s.xml">
-      <configuration name="ipstorAPI.getAllPhysicalDevice" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ipstorAPI_getAllPhysicalDevice - 2017.12.29 at 14h 12m 15s.xml">
-      <configuration name="ipstorAPI.getAllPhysicalDevice" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ipstorAPI_getFCbasePort - 2017.12.28 at 17h 34m 56s.xml">
-      <configuration name="ipstorAPI.getFCbasePort" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ipstorAPI_getPhysicalDevicePath - 2017.12.29 at 14h 01m 34s.xml">
-      <configuration name="ipstorAPI.getPhysicalDevicePath" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ipstorAPI_getPhysicalDevicePath - 2017.12.29 at 14h 05m 19s.xml">
-      <configuration name="ipstorAPI.getPhysicalDevicePath" configurationId="TestNG" />
     </history-entry>
     <history-entry file="ipstorAPI_getPhysicalDevicePath - 2017.12.29 at 14h 05m 20s.xml">
       <configuration name="ipstorAPI.getPhysicalDevicePath" configurationId="TestNG" />
@@ -505,18 +510,18 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37892377" sideWeight="0.496875" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3778027" sideWeight="0.4671875" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33632287" sideWeight="0.18203124" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23654708" sideWeight="0.23046875" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33632287" sideWeight="0.8179687" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23654708" sideWeight="0.76953125" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.175" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28359374" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -537,7 +542,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Removed extra comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed extra comments" />
+    <MESSAGE value="Added Extended Report" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Extended Report" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -548,10 +554,108 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/GUI/ManageTest.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="35" lean-forward="false" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RestAPI/ipstorAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="5" lean-forward="false" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="method#getAllPhysicalResource#0;class#ipstorAPI#0" expanded="false" />
+            <element signature="method#getAllPhysicalDevice#0;class#ipstorAPI#0" expanded="false" />
+            <element signature="method#getClientInitiator#0;class#ipstorAPI#0" expanded="false" />
+            <element signature="method#getFCbasePort#0;class#ipstorAPI#0" expanded="false" />
+            <element signature="method#getFCTargetPort#0;class#ipstorAPI#0" expanded="false" />
+            <element signature="method#getEnumUnassignedPhysicalDevices#0;class#ipstorAPI#0" expanded="false" />
+            <element signature="method#getEnumeleligibleTarget#0;class#ipstorAPI#0" expanded="false" />
+            <element signature="method#getEnumStoragePool#0;class#ipstorAPI#0" expanded="false" />
+            <element signature="method#getPhysicalResource#0;class#ipstorAPI#0" expanded="false" />
+            <element signature="method#getPhysicalDevicePath#0;class#ipstorAPI#0" expanded="false" />
+            <element signature="method#getPhysicalDevices#0;class#ipstorAPI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RestAPI/ApiResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExReport/ExtentReporterNG.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/GUI/ManageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="30" column="80" lean-forward="false" selection-start-line="30" selection-start-column="80" selection-end-line="30" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RestAPI/ipstorAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="5" lean-forward="false" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="method#getAllPhysicalResource#0;class#ipstorAPI#0" expanded="false" />
+            <element signature="method#getAllPhysicalDevice#0;class#ipstorAPI#0" expanded="false" />
+            <element signature="method#getClientInitiator#0;class#ipstorAPI#0" expanded="false" />
+            <element signature="method#getFCbasePort#0;class#ipstorAPI#0" expanded="false" />
+            <element signature="method#getFCTargetPort#0;class#ipstorAPI#0" expanded="false" />
+            <element signature="method#getEnumUnassignedPhysicalDevices#0;class#ipstorAPI#0" expanded="false" />
+            <element signature="method#getEnumeleligibleTarget#0;class#ipstorAPI#0" expanded="false" />
+            <element signature="method#getEnumStoragePool#0;class#ipstorAPI#0" expanded="false" />
+            <element signature="method#getPhysicalResource#0;class#ipstorAPI#0" expanded="false" />
+            <element signature="method#getPhysicalDevicePath#0;class#ipstorAPI#0" expanded="false" />
+            <element signature="method#getPhysicalDevices#0;class#ipstorAPI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RestAPI/ApiResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExReport/ExtentReporterNG.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/GUI/ManageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -561,7 +665,7 @@
         <state relative-caret-position="2176">
           <caret line="128" column="41" lean-forward="true" selection-start-line="128" selection-start-column="7" selection-end-line="128" selection-end-column="41" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#getAllPhysicalResource#0;class#ipstorAPI#0" expanded="false" />
             <element signature="method#getAllPhysicalDevice#0;class#ipstorAPI#0" expanded="false" />
             <element signature="method#getClientInitiator#0;class#ipstorAPI#0" expanded="false" />
@@ -581,37 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3536">
           <caret line="259" column="23" lean-forward="false" selection-start-line="259" selection-start-column="16" selection-end-line="259" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2802#2803#0" expanded="false" />
-            <element signature="e#2832#2833#0" expanded="false" />
-            <element signature="e#2877#2878#0" expanded="false" />
-            <element signature="e#2944#2945#0" expanded="false" />
-            <element signature="e#2992#2993#0" expanded="false" />
-            <element signature="e#3053#3054#0" expanded="false" />
-            <element signature="e#3112#3113#0" expanded="false" />
-            <element signature="e#3187#3188#0" expanded="false" />
-            <element signature="e#3399#3400#0" expanded="false" />
-            <element signature="e#3468#3469#0" expanded="false" />
-            <element signature="e#3517#3518#0" expanded="false" />
-            <element signature="e#3597#3598#0" expanded="false" />
-            <element signature="e#3647#3648#0" expanded="false" />
-            <element signature="e#3714#3715#0" expanded="false" />
-            <element signature="e#4863#4864#0" expanded="false" />
-            <element signature="e#4903#4904#0" expanded="false" />
-            <element signature="e#4938#4939#0" expanded="false" />
-            <element signature="e#4981#4982#0" expanded="false" />
-            <element signature="e#5320#5321#0" expanded="false" />
-            <element signature="e#5387#5388#0" expanded="false" />
-            <element signature="e#7782#7783#0" expanded="false" />
-            <element signature="e#7830#7831#0" expanded="false" />
-            <element signature="e#7869#7870#0" expanded="false" />
-            <element signature="e#7919#7920#0" expanded="false" />
-            <element signature="e#10410#10411#0" expanded="false" />
-            <element signature="e#10477#10478#0" expanded="false" />
-            <element signature="e#10520#10521#0" expanded="false" />
-            <element signature="e#10600#10601#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -630,7 +703,7 @@
         <state relative-caret-position="527">
           <caret line="31" column="25" lean-forward="false" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#getAllPhysicalResource#0;class#ipstorAPI#0" expanded="false" />
             <element signature="method#getAllPhysicalDevice#0;class#ipstorAPI#0" expanded="false" />
             <element signature="method#getClientInitiator#0;class#ipstorAPI#0" expanded="false" />
@@ -651,7 +724,7 @@
         <state relative-caret-position="476">
           <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -683,11 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="37" column="1" lean-forward="false" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1173#1174#0" expanded="false" />
-            <element signature="e#1241#1242#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -696,7 +764,7 @@
         <state relative-caret-position="153">
           <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#getAllPhysicalResource#0;class#ipstorAPI#0" expanded="false" />
             <element signature="method#getAllPhysicalDevice#0;class#ipstorAPI#0" expanded="false" />
             <element signature="method#getClientInitiator#0;class#ipstorAPI#0" expanded="false" />
@@ -731,37 +799,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
           <caret line="55" column="58" lean-forward="true" selection-start-line="55" selection-start-column="58" selection-end-line="55" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2802#2803#0" expanded="false" />
-            <element signature="e#2832#2833#0" expanded="false" />
-            <element signature="e#2877#2878#0" expanded="false" />
-            <element signature="e#2944#2945#0" expanded="false" />
-            <element signature="e#2992#2993#0" expanded="false" />
-            <element signature="e#3053#3054#0" expanded="false" />
-            <element signature="e#3112#3113#0" expanded="false" />
-            <element signature="e#3187#3188#0" expanded="false" />
-            <element signature="e#3399#3400#0" expanded="false" />
-            <element signature="e#3468#3469#0" expanded="false" />
-            <element signature="e#3517#3518#0" expanded="false" />
-            <element signature="e#3597#3598#0" expanded="false" />
-            <element signature="e#3647#3648#0" expanded="false" />
-            <element signature="e#3714#3715#0" expanded="false" />
-            <element signature="e#4863#4864#0" expanded="false" />
-            <element signature="e#4903#4904#0" expanded="false" />
-            <element signature="e#4938#4939#0" expanded="false" />
-            <element signature="e#4981#4982#0" expanded="false" />
-            <element signature="e#5320#5321#0" expanded="false" />
-            <element signature="e#5387#5388#0" expanded="false" />
-            <element signature="e#7782#7783#0" expanded="false" />
-            <element signature="e#7830#7831#0" expanded="false" />
-            <element signature="e#7869#7870#0" expanded="false" />
-            <element signature="e#7919#7920#0" expanded="false" />
-            <element signature="e#10410#10411#0" expanded="false" />
-            <element signature="e#10477#10478#0" expanded="false" />
-            <element signature="e#10520#10521#0" expanded="false" />
-            <element signature="e#10600#10601#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -777,11 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="37" column="1" lean-forward="true" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1173#1174#0" expanded="false" />
-            <element signature="e#1241#1242#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -790,7 +822,7 @@
         <state relative-caret-position="425">
           <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#getAllPhysicalResource#0;class#ipstorAPI#0" expanded="false" />
             <element signature="method#getAllPhysicalDevice#0;class#ipstorAPI#0" expanded="false" />
             <element signature="method#getClientInitiator#0;class#ipstorAPI#0" expanded="false" />
@@ -858,21 +890,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="97" column="21" lean-forward="false" selection-start-line="97" selection-start-column="21" selection-end-line="97" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/Manage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/MainLogin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -887,37 +904,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="267" column="7" lean-forward="true" selection-start-line="267" selection-start-column="7" selection-end-line="267" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2802#2803#0" expanded="false" />
-            <element signature="e#2832#2833#0" expanded="false" />
-            <element signature="e#2877#2878#0" expanded="false" />
-            <element signature="e#2944#2945#0" expanded="false" />
-            <element signature="e#2992#2993#0" expanded="false" />
-            <element signature="e#3053#3054#0" expanded="false" />
-            <element signature="e#3112#3113#0" expanded="false" />
-            <element signature="e#3187#3188#0" expanded="false" />
-            <element signature="e#3399#3400#0" expanded="false" />
-            <element signature="e#3468#3469#0" expanded="false" />
-            <element signature="e#3517#3518#0" expanded="false" />
-            <element signature="e#3597#3598#0" expanded="false" />
-            <element signature="e#3647#3648#0" expanded="false" />
-            <element signature="e#3714#3715#0" expanded="false" />
-            <element signature="e#4863#4864#0" expanded="false" />
-            <element signature="e#4903#4904#0" expanded="false" />
-            <element signature="e#4938#4939#0" expanded="false" />
-            <element signature="e#4981#4982#0" expanded="false" />
-            <element signature="e#5320#5321#0" expanded="false" />
-            <element signature="e#5387#5388#0" expanded="false" />
-            <element signature="e#7782#7783#0" expanded="false" />
-            <element signature="e#7830#7831#0" expanded="false" />
-            <element signature="e#7869#7870#0" expanded="false" />
-            <element signature="e#7919#7920#0" expanded="false" />
-            <element signature="e#10410#10411#0" expanded="false" />
-            <element signature="e#10477#10478#0" expanded="false" />
-            <element signature="e#10520#10521#0" expanded="false" />
-            <element signature="e#10600#10601#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -932,9 +918,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -942,7 +925,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -950,7 +932,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -958,17 +939,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="30" lean-forward="false" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/GUI/ManageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -976,16 +946,83 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="492">
           <caret line="54" column="25" lean-forward="false" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExReport/ExtentReporterNG.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="73" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/Manage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="29" column="87" lean-forward="false" selection-start-line="29" selection-start-column="87" selection-end-line="29" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUITest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RestAPITest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-186">
+          <caret line="34" column="37" lean-forward="false" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/surefire-reports/TestSuite.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExReport/ExtentReporterNG.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RestAPI/ApiResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="30" column="38" lean-forward="false" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/RestAPI/ipstorAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="34" column="5" lean-forward="false" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        <state relative-caret-position="171">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#getAllPhysicalResource#0;class#ipstorAPI#0" expanded="false" />
             <element signature="method#getAllPhysicalDevice#0;class#ipstorAPI#0" expanded="false" />
             <element signature="method#getClientInitiator#0;class#ipstorAPI#0" expanded="false" />
@@ -1001,29 +1038,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/ExtentReporterNG.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/GUI/ManageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="73" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="358">
+          <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RestAPI/ApiResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/ExtentReporterNG.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>comFreestor</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.aventstack:extentreports:3.0.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

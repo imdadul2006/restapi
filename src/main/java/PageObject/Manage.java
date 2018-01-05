@@ -19,13 +19,17 @@ public class Manage extends Base {
     @FindBy(xpath = "//ul[@class='nav nav-tabs']") WebElement middleBar;
     @FindBy(xpath = "//div[@class='panel-heading clearfix']/div[1]/div[1]/button[1]") WebElement create;
 
+    @FindAll(@FindBy(xpath = "//ul[@class='array-list']/li/div[1]/span[1]")) public List<WebElement> serverID;
+
     //Find all item on second navigation tab
-    @FindAll({@FindBy(xpath = "//ul[@class='nav nav-tabs']/li")})  public List<WebElement> navigationList;
+    @FindAll(@FindBy(xpath = "//ul[@class='nav nav-tabs']/li"))  public List<WebElement> navigationList;
     // Find all them on settings page
     @FindAll({@FindBy(xpath = "//div[@class='widget-item thumb']/following-sibling::div")})public List<WebElement> settingPageOptions;
 
     public WebElement getMiddleBar() { return middleBar;}
     public WebElement navigateElement(String navigate){return ListOfString(navigationList,navigate); }
     public WebElement navigateSetup(String navigate){ return ListOfString(settingPageOptions,navigate); }
+    public WebElement serverSeletion(String serverName){ return ListOfString(serverID,serverName);}
     public WebElement getCreate() { return create; }
+
 }
