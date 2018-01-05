@@ -16,6 +16,7 @@ import org.testng.annotations.Test;
 import javax.activation.CommandObject;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class ipstorAPI {
@@ -33,21 +34,20 @@ public class ipstorAPI {
         Response login= given().header(new Header("Content-Type","application/json")).body(loginFile).log().all().post("ipstor/auth/login").then().log().all().extract().response();
     }
    */
-    @Test (priority = 1)
-    public void getAllPhysicalResource() throws IOException {
+  /*  @Test (priority = 1)
+    public void getAllphysicaladapters() throws IOException {
         JsonPath jPhysicalResource = CommonAPI.commonGet(ApiResource.getenumAdapters());
         adapterList = jPhysicalResource.get("data.physicaladapters.id");
         System.out.println("Respond : rc = "+jPhysicalResource.get("rc"));
         Assert.assertEquals(jPhysicalResource.get("rc"),0);
 
-    }
+    }*/
 
     @Test (priority = 1)
     public void getAllPhysicalDevice() throws IOException {
         JsonPath jPhysicalDevices= CommonAPI.commonGet(ApiResource.getEnumPhysicalDevices());
         physicalDeviceList = jPhysicalDevices.get("data.physicaldevices.id");
-
-        System.out.println("=====================================");
+        System.out.println("================physicalDeviceList=====================");
         for (String x:physicalDeviceList) {
             System.out.println(x);
         }

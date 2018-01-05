@@ -54,4 +54,16 @@ public class CommonAPI {
         Response res = given().cookie("session_id", getSessionID()).log().uri().get(getApi).then().log().all().extract().response();
         return DataParser.rawToJSON(res);
     }
+
+   /* public static JsonPath commonPost(String postApi, String body) throws IOException {
+        setBaseURI();
+        Response res = given().cookie("session_id", getSessionID()).log().uri().get(getApi).then().log().all().extract().response();
+        return DataParser.rawToJSON(res);
+    }
+
+    public static JsonPath commonPost(String postApi, String param, String body) throws IOException {
+        setBaseURI();
+        Response res = given().cookie("session_id", getSessionID()).log().uri().get(getApi).then().log().all().extract().response();
+        return DataParser.rawToJSON(res);
+    }*/
 }

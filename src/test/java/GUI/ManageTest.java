@@ -37,21 +37,4 @@ public class ManageTest extends Base {
         man.navigateSetup("FC/iSCSI Target Mode").click();
 
     }
-
-    @Test
-    public void Login2() {
-        MainLogin hp = new MainLogin(driver);
-        hp.getUserName().sendKeys("superadmin");
-        hp.getPassword().sendKeys("freestor");
-        hp.getLoginButton().click();
-        waitUntilClickAble(hp.getTopMenu());
-        hp.navigateElement("Manage").click();
-
-        Manage man = new Manage(driver);
-        waitUntilClickAble(man.getMiddleBar());
-        man.serverSeletion("FSS-119").click();
-        man.navigateElement("Settings").click();
-
-        man.navigateSetup("FC/iSCSI Target Mode").click();
-    }
 }
