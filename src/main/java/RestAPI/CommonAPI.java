@@ -34,11 +34,9 @@ public class CommonAPI {
         return currentSessionID;
 
     }
-
     public static Header header(){
         return new Header("Content-Type","application/json");
     }
-
     public static void setBaseURI() throws IOException {
         Properties properties = property();
         RestAssured.baseURI = properties.getProperty("url");
@@ -51,14 +49,13 @@ public class CommonAPI {
         prop.load( fis);
         return prop;
     }
-
     public static JsonPath commonGet(String getApi) throws IOException {
         setBaseURI();
         Response res = given().cookie("session_id", getSessionID()).log().uri().get(getApi).then().extract().response();
         return DataParser.rawToJSON(res);
     }
 
-   /* public static JsonPath commonPost(String postApi, String body) throws IOException {
+  /*  public static JsonPath commonPost(String postApi, String body) throws IOException {
         setBaseURI();
         Response res = given().cookie("session_id", getSessionID()).log().uri().get(getApi).then().log().all().extract().response();
         return DataParser.rawToJSON(res);
@@ -68,15 +65,14 @@ public class CommonAPI {
         setBaseURI();
         Response res = given().cookie("session_id", getSessionID()).log().uri().get(getApi).then().log().all().extract().response();
         return DataParser.rawToJSON(res);
-    }*/
-
-
-    public static List<String> getParsedStringList(String getAPI,String totalLocation,String whatEnabled, String find) throws IOException {
+    }
+*/
+    public static List<String> getParsedStringList(String getAPI,String totalLocation,String ifEnabled, String find) throws IOException {
         JsonPath sanResouce= CommonAPI.commonGet(getAPI);
 
-        StringTokenizer tokenizer = new StringTokenizer(whatEnabled, "*");
-        String preWhatEnabled = tokenizer.nextToken();
-        String postWhatEnabled = tokenizer.nextToken();
+        StringTokenizer tokenizer = new StringTokenizer(ifEnabled, "*");
+        String preifEnabled = tokenizer.nextToken();
+        String postifEnabled = tokenizer.nextToken();
 
         StringTokenizer tokenizer2 = new StringTokenizer(find, "*");
         String preFind = tokenizer2.nextToken();
@@ -84,18 +80,17 @@ public class CommonAPI {
 
         List<String> sanResourceList = new ArrayList<String>();
         for(int i = 0; i< sanResouce.getInt(totalLocation);i++){
-            if(sanResouce.getBoolean(preWhatEnabled+i+postWhatEnabled))
+            if(sanResouce.getBoolean(preifEnabled+i+postifEnabled))
               sanResourceList.add(sanResouce.getString(preFind+i+postFind));
         }
         return sanResourceList;
     }
-
-    public static List<Integer> getParsedIntgerList(String getAPI,String totalLocation,String whatEnabled, String find) throws IOException {
+    public static List<Integer> getParsedIntgerList(String getAPI,String totalLocation,String ifEnabled, String find) throws IOException {
         JsonPath sanResouce= CommonAPI.commonGet(getAPI);
 
-        StringTokenizer tokenizer = new StringTokenizer(whatEnabled, "*");
-        String preWhatEnabled = tokenizer.nextToken();
-        String postWhatEnabled = tokenizer.nextToken();
+        StringTokenizer tokenizer = new StringTokenizer(ifEnabled, "*");
+        String preifEnabled = tokenizer.nextToken();
+        String postifEnabled = tokenizer.nextToken();
 
         StringTokenizer tokenizer2 = new StringTokenizer(find, "*");
         String preFind = tokenizer2.nextToken();
@@ -103,7 +98,7 @@ public class CommonAPI {
 
         List<Integer> sanResourceList = new ArrayList<Integer>();
         for(int i = 0; i< sanResouce.getInt(totalLocation);i++){
-            if(sanResouce.getBoolean(preWhatEnabled+i+postWhatEnabled))
+            if(sanResouce.getBoolean(preifEnabled+i+postifEnabled))
                 sanResourceList.add(sanResouce.getInt(preFind+i+postFind));
         }
         return sanResourceList;

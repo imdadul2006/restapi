@@ -18,7 +18,6 @@ public class  ApiResource {
     }
 
     // Get API
-
     public static String getenumAdapters(){return "physicalresource/physicaladapter";}
     public static String getaAdapter(int adapterID) {return "physicalresource/physicaladapter/"+adapterID;}
     public static String getClientInitiator (){return "physicalresource/physicaladapter/fcclientinitiators";}
@@ -33,10 +32,9 @@ public class  ApiResource {
     public static String getSanresource(){return "logicalresource/sanresource";}
     public static String getReplication(int id){return  "logicalresource/replication/" + id;}
 
-
     // Put API
-    // Requires lots of Testing
 
+    // Requires lots of Testing
     public static String putManagePhysicalAdapter(int adapterNumberID){return "physicalresource/physicaladapter/"+adapterNumberID;}
     public static String putRescanPhysicalDevices(){return "physicalresource/physicaldevice/rescan";}
     public static String putManagePhysicalDevice(int guid){return "physicalresource/physicaldevice/"+guid;}

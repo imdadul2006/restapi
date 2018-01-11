@@ -22,11 +22,9 @@ public class ManageCreateDevice extends Manage {
     public WebElement getEnableMultiple() {
         return enableMultiple;
     }
-
     public WebElement getSanDiskName() {
         return sanDiskName;
     }
-
     public List<WebElement> getLunTypes() {
         return lunTypes;
     }

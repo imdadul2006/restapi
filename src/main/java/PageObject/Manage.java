@@ -23,6 +23,7 @@ public class Manage extends Base {
 
     //Find all item on second navigation tab
     @FindAll(@FindBy(xpath = "//ul[@class='nav nav-tabs']/li"))  public List<WebElement> navigationList;
+
     // Find all them on settings page
     @FindAll({@FindBy(xpath = "//div[@class='widget-item thumb']/following-sibling::div")})public List<WebElement> settingPageOptions;
 

@@ -25,24 +25,6 @@ public class ipstorAPI {
     static List<Integer> adapterList;
     static List<String> physicalDeviceList;
 
-   /*@Test
-    public void login() throws IOException {
-          System.out.println(abc);
-          String abc = CommonAPI.getSessionID();
-          File loginFile = new File("src/test/Resource/loginServer.json");
-          RestAssured.baseURI = "http://10.8.25.32/";
-        Response login= given().header(new Header("Content-Type","application/json")).body(loginFile).log().all().post("ipstor/auth/login").then().log().all().extract().response();
-    }
-   */
-  /*  @Test (priority = 1)
-    public void getAllphysicaladapters() throws IOException {
-        JsonPath jPhysicalResource = CommonAPI.commonGet(ApiResource.getenumAdapters());
-        adapterList = jPhysicalResource.get("data.physicaladapters.id");
-        System.out.println("Respond : rc = "+jPhysicalResource.get("rc"));
-        Assert.assertEquals(jPhysicalResource.get("rc"),0);
-
-    }*/
-
     @Test (priority = 1)
     public void getAllPhysicalDevice() throws IOException {
         JsonPath jPhysicalDevices= CommonAPI.commonGet(ApiResource.getEnumPhysicalDevices());
