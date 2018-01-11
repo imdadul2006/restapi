@@ -3,13 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="28505aa6-1578-4c7e-80df-3b4ec26a4a42" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPI/ApiResource.java" afterPath="$PROJECT_DIR$/src/main/java/RestAPI/ApiResource.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/RestAPI/CommonAPI.java" afterPath="$PROJECT_DIR$/src/main/java/RestAPI/CommonAPI.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPI/DataParser.java" afterPath="$PROJECT_DIR$/src/main/java/RestAPI/DataParser.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/Resource/env.properties" afterPath="$PROJECT_DIR$/src/test/Resource/env.properties" />
-      <change beforePath="$PROJECT_DIR$/src/test/Resource/loginServer.json" afterPath="$PROJECT_DIR$/src/test/Resource/loginServer.json" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RestAPI/PhysicalDeviceManage.java" afterPath="$PROJECT_DIR$/src/test/java/RestAPI/PhysicalDeviceManage.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RestAPI/ipstorAPI.java" afterPath="$PROJECT_DIR$/src/test/java/RestAPI/ipstorAPI.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RestAPI/ApiResource.class" afterPath="$PROJECT_DIR$/target/classes/RestAPI/ApiResource.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RestAPI/CommonAPI.class" afterPath="$PROJECT_DIR$/target/classes/RestAPI/CommonAPI.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,7 +22,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/RestAPI/ipstorAPI.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="333">
-              <caret line="121" column="0" lean-forward="true" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+              <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
               <folding>
                 <element signature="method#getAllPhysicalDevice#0;class#ipstorAPI#0" expanded="false" />
                 <element signature="method#getClientInitiator#0;class#ipstorAPI#0" expanded="false" />
@@ -46,8 +42,8 @@
       <file leaf-file-name="PhysicalDeviceManage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/RestAPI/PhysicalDeviceManage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="35" column="33" lean-forward="true" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+            <state relative-caret-position="182">
+              <caret line="28" column="55" lean-forward="false" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <marker date="1515625992325" expanded="false" signature="566:574" ph="&lt;~&gt;" />
@@ -59,11 +55,13 @@
       <file leaf-file-name="CommonAPI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/RestAPI/CommonAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-48">
-              <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+            <state relative-caret-position="-682">
+              <caret line="33" column="20" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
               <folding>
-                <element signature="e#3268#3276#0" expanded="true" />
-                <element signature="e#4151#4160#0" expanded="true" />
+                <element signature="e#1258#1259#0" expanded="true" />
+                <element signature="e#1326#1327#0" expanded="true" />
+                <element signature="e#3256#3264#0" expanded="true" />
+                <element signature="e#4139#4148#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/RestAPI/DataParser.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,13 +82,21 @@
       <file leaf-file-name="BZ1844.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/RestAPI/BZ1844.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="50" column="23" lean-forward="true" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+            <state relative-caret-position="219">
+              <caret line="29" column="30" lean-forward="false" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#test#0;class#BZ1844#0" expanded="false" />
-                <marker date="1515626970059" expanded="false" signature="571:579" ph="&lt;~&gt;" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="info.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/Resource/info.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="30" lean-forward="false" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -99,7 +105,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/RestAPI/ApiResource.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="245">
-              <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -119,7 +125,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/Resource/loginServer.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+              <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -137,6 +143,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="IH" />
         <option value="hoq.imdadul" />
       </list>
     </option>
@@ -279,7 +286,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -601,19 +608,17 @@
       <option name="project" value="LOCAL" />
       <updated>1515177280856</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added a Generic method">
+      <created>1515681956574</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1515681956574</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BZ1844 - 2018.01.10 at 18h 14m 10s.xml">
-      <configuration name="BZ1844" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="BZ1844 - 2018.01.10 at 18h 15m 31s.xml">
-      <configuration name="BZ1844" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="BZ1844 - 2018.01.10 at 18h 18m 49s.xml">
-      <configuration name="BZ1844" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="BZ1844 - 2018.01.10 at 18h 21m 08s.xml">
       <configuration name="BZ1844" configurationId="TestNG" />
     </history-entry>
@@ -626,11 +631,20 @@
     <history-entry file="BZ1844 - 2018.01.10 at 18h 28m 07s.xml">
       <configuration name="BZ1844" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BZ1844_replicationStatus - 2018.01.10 at 17h 46m 05s.xml">
-      <configuration name="BZ1844.replicationStatus" configurationId="TestNG" />
+    <history-entry file="BZ1844 - 2018.01.11 at 09h 53m 33s.xml">
+      <configuration name="BZ1844" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BZ1844_replicationStatus - 2018.01.10 at 18h 08m 42s.xml">
-      <configuration name="BZ1844.replicationStatus" configurationId="TestNG" />
+    <history-entry file="BZ1844 - 2018.01.11 at 09h 55m 55s.xml">
+      <configuration name="BZ1844" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="BZ1844 - 2018.01.11 at 10h 02m 47s.xml">
+      <configuration name="BZ1844" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="BZ1844 - 2018.01.11 at 10h 04m 42s.xml">
+      <configuration name="BZ1844" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="BZ1844 - 2018.01.11 at 10h 37m 41s.xml">
+      <configuration name="BZ1844" configurationId="TestNG" />
     </history-entry>
     <history-entry file="BZ1844_replicationStatus - 2018.01.10 at 18h 22m 02s.xml">
       <configuration name="BZ1844.replicationStatus" configurationId="TestNG" />
@@ -638,16 +652,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5852018" sideWeight="0.38203126" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5852018" sideWeight="0.3703125" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43385652" sideWeight="0.246875" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.43385652" sideWeight="0.2703125" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43385652" sideWeight="0.753125" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43385652" sideWeight="0.7296875" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.496875" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -711,7 +726,8 @@
     <MESSAGE value="Removed extra comments" />
     <MESSAGE value="Added Extended Report" />
     <MESSAGE value="Starting Post API Testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Starting Post API Testing" />
+    <MESSAGE value="Added a Generic method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a Generic method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1016,13 +1032,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Resource/info.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="30" lean-forward="false" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ExReport/ExtentReporterNG.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -1101,18 +1110,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Resource/loginServer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/RestAPI/ipstorAPI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
-          <caret line="121" column="0" lean-forward="true" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+          <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
           <folding>
             <element signature="method#getAllPhysicalDevice#0;class#ipstorAPI#0" expanded="false" />
             <element signature="method#getClientInitiator#0;class#ipstorAPI#0" expanded="false" />
@@ -1131,10 +1132,58 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/RestAPI/DataParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RestAPI/ApiResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RestAPI/PhysicalDeviceManage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="28" column="55" lean-forward="false" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1515625992325" expanded="false" signature="566:574" ph="&lt;~&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RestAPI/CommonAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-682">
+          <caret line="33" column="20" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+          <folding>
+            <element signature="e#1258#1259#0" expanded="true" />
+            <element signature="e#1326#1327#0" expanded="true" />
+            <element signature="e#3256#3264#0" expanded="true" />
+            <element signature="e#4139#4148#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Resource/info.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="30" lean-forward="false" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Resource/loginServer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1146,44 +1195,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RestAPI/ApiResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RestAPI/CommonAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-48">
-          <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-          <folding>
-            <element signature="e#3268#3276#0" expanded="true" />
-            <element signature="e#4151#4160#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RestAPI/PhysicalDeviceManage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="35" column="33" lean-forward="true" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1515625992325" expanded="false" signature="566:574" ph="&lt;~&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/RestAPI/BZ1844.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="50" column="23" lean-forward="true" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+        <state relative-caret-position="219">
+          <caret line="29" column="30" lean-forward="false" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#test#0;class#BZ1844#0" expanded="false" />
-            <marker date="1515626970059" expanded="false" signature="571:579" ph="&lt;~&gt;" />
           </folding>
         </state>
       </provider>

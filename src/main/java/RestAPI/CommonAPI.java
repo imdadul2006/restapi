@@ -54,7 +54,7 @@ public class CommonAPI {
 
     public static JsonPath commonGet(String getApi) throws IOException {
         setBaseURI();
-        Response res = given().cookie("session_id", getSessionID()).log().uri().get(getApi).then().log().all().extract().response();
+        Response res = given().cookie("session_id", getSessionID()).log().uri().get(getApi).then().extract().response();
         return DataParser.rawToJSON(res);
     }
 
