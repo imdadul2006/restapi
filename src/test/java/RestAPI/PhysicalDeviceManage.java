@@ -12,7 +12,7 @@ import java.util.List;
 public class PhysicalDeviceManage {
 
 
-    @BeforeClass
+   /* @BeforeClass
     public List<String> getListOfForeignDisk() throws IOException {
         JsonPath jPhysicalDevices= CommonAPI.commonGet(ApiResource.getEnumPhysicalDevices());
 
@@ -20,18 +20,20 @@ public class PhysicalDeviceManage {
 
         List<String> physicalDeviceList2 = new ArrayList<String>();
 
-        for(int i = 0; i< jPhysicalDevices.getInt("data.total");i++){
-            if(jPhysicalDevices.getBoolean("data.physicaldevices["+i+"].isforeign"))
+     *//*   for(int i = 0; i< jPhysicalDevices.getInt("data.total");i++){
+            if(jPhysicalDevices.getBoolean())
                 physicalDeviceList2.add(jPhysicalDevices.getString("data.physicaldevices["+i+"].id"));
         }
-
+*//*
         System.out.println("Respond : rc = "+jPhysicalDevices.get("rc"));
         Assert.assertEquals(jPhysicalDevices.get("rc"),0);
         return physicalDeviceList2;
-    }
+    }*/
 
     @Test
-    public void putManagePhysicalDevice(List<String> guid){
+    public void putManagePhysicalDevice() throws IOException {
+        List<String> list = CommonAPI.getParsedStringList(ApiResource.getSanresource(),"data.total","data.physicaldevices[*].isforeign","data.virtualdevices[*].id");
+        System.out.println(list);
 
     }
 }

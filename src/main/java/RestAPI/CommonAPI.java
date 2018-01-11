@@ -9,7 +9,10 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
+import java.util.StringTokenizer;
 
 import static RestAPI.DataParser.rawToJSON;
 import static io.restassured.RestAssured.given;
@@ -66,4 +69,43 @@ public class CommonAPI {
         Response res = given().cookie("session_id", getSessionID()).log().uri().get(getApi).then().log().all().extract().response();
         return DataParser.rawToJSON(res);
     }*/
+
+
+    public static List<String> getParsedStringList(String getAPI,String totalLocation,String whatEnabled, String find) throws IOException {
+        JsonPath sanResouce= CommonAPI.commonGet(getAPI);
+
+        StringTokenizer tokenizer = new StringTokenizer(whatEnabled, "*");
+        String preWhatEnabled = tokenizer.nextToken();
+        String postWhatEnabled = tokenizer.nextToken();
+
+        StringTokenizer tokenizer2 = new StringTokenizer(find, "*");
+        String preFind = tokenizer2.nextToken();
+        String postFind= tokenizer2.nextToken();
+
+        List<String> sanResourceList = new ArrayList<String>();
+        for(int i = 0; i< sanResouce.getInt(totalLocation);i++){
+            if(sanResouce.getBoolean(preWhatEnabled+i+postWhatEnabled))
+              sanResourceList.add(sanResouce.getString(preFind+i+postFind));
+        }
+        return sanResourceList;
+    }
+
+    public static List<Integer> getParsedIntgerList(String getAPI,String totalLocation,String whatEnabled, String find) throws IOException {
+        JsonPath sanResouce= CommonAPI.commonGet(getAPI);
+
+        StringTokenizer tokenizer = new StringTokenizer(whatEnabled, "*");
+        String preWhatEnabled = tokenizer.nextToken();
+        String postWhatEnabled = tokenizer.nextToken();
+
+        StringTokenizer tokenizer2 = new StringTokenizer(find, "*");
+        String preFind = tokenizer2.nextToken();
+        String postFind= tokenizer2.nextToken();
+
+        List<Integer> sanResourceList = new ArrayList<Integer>();
+        for(int i = 0; i< sanResouce.getInt(totalLocation);i++){
+            if(sanResouce.getBoolean(preWhatEnabled+i+postWhatEnabled))
+                sanResourceList.add(sanResouce.getInt(preFind+i+postFind));
+        }
+        return sanResourceList;
+    }
 }

@@ -30,6 +30,8 @@ public class  ApiResource {
     public static String getEnumeleligibleTarget(){return "physicalresource/physicaldevice/eligibletargets";}
     public static String getPhysicalDevices(String guid){return "physicalresource/physicaldevice/"+ guid;}
     public static String getEnumStoragePool(){return "physicalresource/storagepool";}
+    public static String getSanresource(){return "logicalresource/sanresource";}
+    public static String getReplication(int id){return  "logicalresource/replication/" + id;}
 
 
     // Put API
