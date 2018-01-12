@@ -9,10 +9,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Properties;
-import java.util.StringTokenizer;
+import java.util.*;
 
 import static RestAPI.DataParser.rawToJSON;
 import static io.restassured.RestAssured.given;
@@ -27,7 +24,10 @@ public class CommonAPI {
         String nameOfLoginFile = prop.getProperty("loginJson");
         File loginFile = new File("src/test/Resource/"+nameOfLoginFile+".json");
         if(currentSessionID==null) {
-            Response loginResponse = given().header(CommonAPI.header()).body(loginFile).post(ApiResource.postLogin()).then().extract().response();
+            Response loginResponse = given().header(CommonAPI.header())
+                    .body(loginFile)
+                    .post(ApiResource.postLogin())
+                    .then().extract().response();
             JsonPath auth = rawToJSON(loginResponse);
             currentSessionID = auth.get("id");
         }
@@ -45,28 +45,41 @@ public class CommonAPI {
     }
     public static Properties property() throws IOException {
         Properties prop = new Properties();
-        FileInputStream fis = new FileInputStream("src/test/Resource/env.properties");
+        FileInputStream fis = new FileInputStream("src/test/Resource/fss.properties");
         prop.load( fis);
         return prop;
     }
     public static JsonPath commonGet(String getApi) throws IOException {
         setBaseURI();
-        Response res = given().cookie("session_id", getSessionID()).log().uri().get(getApi).then().extract().response();
+        Response res = given()
+                .cookie("session_id", getSessionID())
+                .log().uri()
+                .get(getApi)
+                .then().extract().response();
         return DataParser.rawToJSON(res);
     }
 
-  /*  public static JsonPath commonPost(String postApi, String body) throws IOException {
+    public static JsonPath commonPost(String postApi, String body) throws IOException {
         setBaseURI();
-        Response res = given().cookie("session_id", getSessionID()).log().uri().get(getApi).then().log().all().extract().response();
+        Response res = given()
+                .cookie("session_id", getSessionID())
+                .body(body)
+                .log().uri()
+                .post(postApi)
+                .then().extract().response();
         return DataParser.rawToJSON(res);
     }
 
-    public static JsonPath commonPost(String postApi, String param, String body) throws IOException {
+    public static JsonPath commonPost(String postApi, Map <String,String> param, String body) throws IOException {
         setBaseURI();
-        Response res = given().cookie("session_id", getSessionID()).log().uri().get(getApi).then().log().all().extract().response();
+        Response res = given().cookie("session_id", getSessionID())
+                .params(param)
+                .body(body)
+                .log().uri().post(postApi)
+                .then().extract().response();
         return DataParser.rawToJSON(res);
     }
-*/
+
     public static List<String> getParsedStringList(String getAPI,String totalLocation,String ifEnabled, String find) throws IOException {
         JsonPath sanResouce= CommonAPI.commonGet(getAPI);
 

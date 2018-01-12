@@ -31,9 +31,9 @@ public class  ApiResource {
     public static String getEnumStoragePool(){return "physicalresource/storagepool";}
     public static String getSanresource(){return "logicalresource/sanresource";}
     public static String getReplication(int id){return  "logicalresource/replication/" + id;}
+    public static String getConfigurationRepo(){return "logicalresource/configurationrepository";}
 
     // Put API
-
     // Requires lots of Testing
     public static String putManagePhysicalAdapter(int adapterNumberID){return "physicalresource/physicaladapter/"+adapterNumberID;}
     public static String putRescanPhysicalDevices(){return "physicalresource/physicaldevice/rescan";}
@@ -43,5 +43,9 @@ public class  ApiResource {
     //Post API
     public static String postCreateBlockDevice(){return "physicalresource/physicaldevice";}
     public static String postCreateStoragePool(){return "physicalresource/storagepool";}
+    public static String postConfigureRepo(){return "logicalresource/configurationrepository";}
+    public static String postReConfigureRepo(){return "logicalresource/configurationrepository/reconfigure";}
 
+    //Delete API
+    public static String delConfigureRepo(){return "logicalresource/configurationrepository";}
 }

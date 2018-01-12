@@ -8,7 +8,8 @@
     </listeners>
     <test name="IPSTOR REST API TEST">
         <classes>
-            <class name="RestAPI.ipstorAPI"/>
+            <class name="RestAPI.ReplicationStatus"/>
+            <class name="RestAPI.PhysicalDeviceManage"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
