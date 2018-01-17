@@ -5,6 +5,7 @@ import PageObject.Manage;
 import PageObject.ManageCreateDevice;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -35,6 +36,9 @@ public class ManageTest extends Base {
         man.navigateElement("Settings").click();
 
         man.navigateSetup("FC/iSCSI Target Mode").click();
-
+    }
+    @AfterClass
+    public void clean(){
+        driver.quit();
     }
 }

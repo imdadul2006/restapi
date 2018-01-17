@@ -1,9 +1,12 @@
 package RestAPI;
 
+import com.beust.jcommander.Parameter;
 import io.restassured.RestAssured;
 import io.restassured.http.Header;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import org.testng.annotations.BeforeSuite;
+
 import static io.restassured.RestAssured.baseURI;
 import java.io.File;
 import java.io.FileInputStream;
@@ -19,15 +22,21 @@ public class CommonAPI {
     static String baseURI;
     static String currentSessionID = null;
 
+
     public static String getSessionID() throws IOException {
-        Properties prop = property();
-        String nameOfLoginFile = prop.getProperty("loginJson");
-        File loginFile = new File("src/test/Resource/"+nameOfLoginFile+".json");
+
+        Properties p = property();
+        String server = p.getProperty("server");
+        String username = p.getProperty("username");
+        String password = p.getProperty("password");
+
+        String loginBody = "{\"server\": \"" +server+"\",\"username\":\"" +username +"\",\"password\":\"" +password +"\"}";
+
         if(currentSessionID==null) {
             Response loginResponse = given().header(CommonAPI.header())
-                    .body(loginFile)
+                    .body(loginBody).log().all()
                     .post(ApiResource.postLogin())
-                    .then().extract().response();
+                    .then().log().all().extract().response();
             JsonPath auth = rawToJSON(loginResponse);
             currentSessionID = auth.get("id");
         }
@@ -39,13 +48,15 @@ public class CommonAPI {
     }
     public static void setBaseURI() throws IOException {
         Properties properties = property();
-        RestAssured.baseURI = properties.getProperty("url");
+        RestAssured.baseURI = "http://"+ properties.getProperty("server")+"/ipstor/" ;
+                //properties.getProperty("url");
         baseURI = RestAssured.baseURI;
 
     }
     public static Properties property() throws IOException {
         Properties prop = new Properties();
-        FileInputStream fis = new FileInputStream("src/test/Resource/fss.properties");
+        FileInputStream fis = new FileInputStream("target/classes/my.properties");
+                //("src/test/Resource/fss.properties");
         prop.load( fis);
         return prop;
     }

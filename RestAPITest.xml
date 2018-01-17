@@ -6,6 +6,7 @@
     <listeners>
         <listener class-name="ExReport.ExtentReporterNG"/>
     </listeners>
+    <parameter name="name" value="Country"/>
     <test name="IPSTOR REST API TEST">
         <classes>
             <class name="RestAPI.ReplicationStatus"/>
