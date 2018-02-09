@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: GUI.ManageTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 44.911 sec <<< FAILURE!
+Login(GUI.ManageTest)  Time elapsed: 22.058 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at GUI.ManageTest.Login(ManageTest.java:33)
+

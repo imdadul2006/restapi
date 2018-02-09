@@ -164,6 +164,18 @@ public class Base {
         return null;
     }
 
+
+
+    public WebElement ListSelectionByIndex(List<WebElement> list,int x) {
+        System.out.println("List size : " + list.size());
+        List<WebElement> items = new ArrayList<WebElement>();
+        for (int i = 0; i<list.size();i++){
+            System.out.println("Index number "+i);
+            list.get(i).click();
+        }
+        return list.get(x);
+    }
+
     public void selectOptionByVisibleText(WebElement element, String value) {
         Select select = new Select(element);
         select.selectByVisibleText(value);
@@ -198,6 +210,17 @@ public class Base {
 
         }
 
+    }
+
+    public void mouseClickByText(String text) {
+        try {
+            String findXpath = "//*[contains(text(),'" + text + "')]";
+            WebElement element = driver.findElement(By.xpath(findXpath));
+            Actions action = new Actions(driver);
+            action.moveToElement(element).click().build().perform();
+        } catch (Exception ex) {
+
+        }
     }
     //handling Alert
     public void okAlert(){
@@ -261,6 +284,12 @@ public class Base {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOf(element));
     }
+
+    public void waitUntilDisappear(WebElement element,int x){
+        WebDriverWait wait = new WebDriverWait(driver, x);
+        wait.until(ExpectedConditions.invisibilityOf(element));
+    }
+
 
    /* public void waitUntilSelectable(WebElement element){
         WebDriverWait wait = new WebDriverWait(driver, 10);

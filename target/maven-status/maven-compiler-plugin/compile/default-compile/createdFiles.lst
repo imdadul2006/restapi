@@ -1,0 +1,8 @@
+PageObject\Administration.class
+Utility\FileRead.class
+PageObject\LoginPage.class
+GUI\Base.class
+PageObject\Manage.class
+ExReport\ExtentReporterNG.class
+PageObject\MainPage.class
+PageObject\ManageCreateDevice.class

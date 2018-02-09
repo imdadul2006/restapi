@@ -19,18 +19,40 @@ public class Manage extends Base {
     @FindBy(xpath = "//ul[@class='nav nav-tabs']") WebElement middleBar;
     @FindBy(xpath = "//div[@class='panel-heading clearfix']/div[1]/div[1]/button[1]") WebElement create;
 
-    @FindAll(@FindBy(xpath = "//ul[@class='array-list']/li/div[1]/span[1]")) public List<WebElement> serverID;
+    // Below two element is only for models
 
+    @FindBy(xpath = "//h5[@class='modal-title']") WebElement modalTitle;
+    @FindBy(xpath = "//button[@type='submit']") WebElement submit;
+
+
+
+    //Since cancel is alway after the sumbit button
+    @FindBy(xpath = "//button[@type='submit']/following::button") WebElement cancel;
+    public WebElement getCancel() { return cancel; }
+
+    //Processing button
+
+
+    @FindBy(xpath = "//p[@ng-show='form.processing']") WebElement processing;
+    public WebElement getProcessing() { return processing; }
+    //Xray Link
+
+    public WebElement getXray() {return xray;}
+    @FindBy(xpath = "(//*[contains(text(),'Download X-ray')])[2]") WebElement xray;
+
+
+
+    @FindAll(@FindBy(xpath = "//ul[@class='array-list']/li/div[1]/span[1]")) public List<WebElement> serverID;
     //Find all item on second navigation tab
     @FindAll(@FindBy(xpath = "//ul[@class='nav nav-tabs']/li"))  public List<WebElement> navigationList;
-
     // Find all them on settings page
     @FindAll({@FindBy(xpath = "//div[@class='widget-item thumb']/following-sibling::div")})public List<WebElement> settingPageOptions;
-
     public WebElement getMiddleBar() { return middleBar;}
     public WebElement navigateElement(String navigate){return ListOfString(navigationList,navigate); }
     public WebElement navigateSetup(String navigate){ return ListOfString(settingPageOptions,navigate); }
     public WebElement serverSeletion(String serverName){ return ListOfString(serverID,serverName);}
     public WebElement getCreate() { return create; }
+    public WebElement getModalTitle() { return modalTitle; }
+    public WebElement getSubmit() {return submit;}
 
 }

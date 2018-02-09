@@ -10,6 +10,21 @@
   <name>com.Freestor</name>
   <url>http://maven.apache.org</url>
 
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+    <fms>10.6.11.53</fms>
+    <username>superadmin</username>
+    <password>freestor</password>
+    <domain></domain>
+    <uri></uri>
+    <payload></payload>
+    <basedir>${project.basedir}</basedir>
+    <payload></payload>
+    <method>GET</method>
+  </properties>
+
   <profiles>
     <profile>
     <id>GUI</id>
@@ -30,28 +45,7 @@
       </pluginManagement>
       </build>
     </profile>
-
-    <profile>
-      <id>API</id>
-      <build>
-        <pluginManagement>
-          <plugins>
-            <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-surefire-plugin</artifactId>
-              <version>2.20.1</version>
-              <configuration>
-                <suiteXmlFiles>
-                  <suiteXmlFile>RestAPITest.xml</suiteXmlFile>
-                </suiteXmlFiles>
-              </configuration>
-            </plugin>
-          </plugins>
-        </pluginManagement>
-      </build>
-    </profile>
   </profiles>
-
   <build>
     <plugins>
       <plugin>
@@ -65,7 +59,7 @@
               <goal>write-project-properties</goal>
             </goals>
             <configuration>
-              <outputFile>${project.build.outputDirectory}/my.properties</outputFile>
+              <outputFile>${project.build.outputDirectory}/fms.properties</outputFile>
             </configuration>
           </execution>
         </executions>
@@ -192,14 +186,4 @@
     </dependency>-->
 
   </dependencies>
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
-      <server>10.6.11.113</server>
-      <username>root</username>
-      <password>IPStor101</password>
-      <repeat>1</repeat>
-
-  </properties>
 </project>

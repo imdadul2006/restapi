@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: GUI.AddNewServer
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 28.647 sec <<< FAILURE!
+addServer(GUI.AddNewServer)  Time elapsed: 4.341 sec  <<< FAILURE!
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at GUI.Base.ListSelectionByIndex(Base.java:172)
+	at PageObject.Administration.serverSuperadminOp(Administration.java:21)
+	at GUI.AddNewServer.addServer(AddNewServer.java:42)
+
