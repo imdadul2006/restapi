@@ -3,22 +3,94 @@
   <component name="ChangeListManager">
     <list default="true" id="28505aa6-1578-4c7e-80df-3b4ec26a4a42" name="Default" comment=" Added Properties-maven-plugin. Now server login information can be pass from commandline.&#10; For Example:&#10; mvn test -Dtest=PhysicalDeviceManage -Dserver=10.8.25.32 -Dusername=root -Dpassword=IPStor101 -Drepeat=5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/GUITest.xml" afterPath="$PROJECT_DIR$/GUITest.xml" />
-      <change beforePath="$PROJECT_DIR$/RestAPITest.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GUI/Base.java" afterPath="$PROJECT_DIR$/src/main/java/GUI/Base.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/MainLogin.java" afterPath="$PROJECT_DIR$/src/main/java/PageObject/LoginPage.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/Manage.java" afterPath="$PROJECT_DIR$/src/main/java/PageObject/Manage.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPI/ApiResource.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPI/CommonAPI.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAPI/DataParser.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/Resource/AddServer.json" afterPath="$PROJECT_DIR$/src/test/Resource/AddServer.json" />
-      <change beforePath="$PROJECT_DIR$/src/test/Resource/freestor.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/Resource/fss.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GUI/ManageTest.java" afterPath="$PROJECT_DIR$/src/test/java/GUI/ManageTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RestAPI/PhysicalDeviceManage.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RestAPI/ReplicationStatus.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RestAPI/ipstorAPI.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/Administration.java" afterPath="$PROJECT_DIR$/src/main/java/PageObject/Administration.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GUI/AddNewServer.java" afterPath="$PROJECT_DIR$/src/test/java/GUI/AddNewServer.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GUI/LogFreestor.java" afterPath="$PROJECT_DIR$/src/test/java/GUI/LogFreestor.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AddServer.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AddUser.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExReport/ExtentReporterNG.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/Base.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObject/Administration.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObject/LoginPage.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObject/MainPage.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObject/Manage.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObject/ManageCreateDevice.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utility/FileRead.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fms.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/loginServer.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/GUI.AddNewServer.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/GUI.AddNewServer/Command line test.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/GUI.AddNewServer/Command line test.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/GUI.AddNewServer/testng-failed.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/GUI.LogFreestor.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/GUI.LogFreestor/Command line test.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/GUI.LogFreestor/Command line test.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/GUI.ManageTest.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/GUI.ManageTest/Command line test.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/GUI.ManageTest/Command line test.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/GUI.ManageTest/testng-failed.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-GUI.AddNewServer.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-GUI.LogFreestor.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-GUI.ManageTest.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/bullet_point.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/collapseall.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/failed.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/jquery-1.7.1.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-GUI.AddNewServer.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-GUI.LogFreestor.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-GUI.ManageTest.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/navigator-bullet.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.AddNewServer/Command line test.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.AddNewServer/classes.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.AddNewServer/groups.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.AddNewServer/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.AddNewServer/main.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.AddNewServer/methods-alphabetical.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.AddNewServer/methods-not-run.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.AddNewServer/methods.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.AddNewServer/reporter-output.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.AddNewServer/testng.xml.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.AddNewServer/toc.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.LogFreestor/Command line test.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.LogFreestor/classes.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.LogFreestor/groups.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.LogFreestor/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.LogFreestor/main.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.LogFreestor/methods-alphabetical.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.LogFreestor/methods-not-run.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.LogFreestor/methods.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.LogFreestor/reporter-output.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.LogFreestor/testng.xml.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.LogFreestor/toc.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.ManageTest/Command line test.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.ManageTest/classes.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.ManageTest/groups.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.ManageTest/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.ManageTest/main.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.ManageTest/methods-alphabetical.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.ManageTest/methods-not-run.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.ManageTest/methods.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.ManageTest/reporter-output.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.ManageTest/testng.xml.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/GUI.ManageTest/toc.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/passed.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/skipped.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/GUI/AddNewServer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/GUI/LogFreestor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/GUI/ManageTest.class" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,11 +106,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ManageTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/GUI/ManageTest.java">
+      <file leaf-file-name="Administration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/Administration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="773">
-              <caret line="58" column="3" lean-forward="false" selection-start-line="58" selection-start-column="3" selection-end-line="58" selection-end-column="3" />
+            <state relative-caret-position="463">
+              <caret line="43" column="33" lean-forward="false" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,42 +121,8 @@
       <file leaf-file-name="LogFreestor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/GUI/LogFreestor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/MainPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="26" column="1" lean-forward="false" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Manage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/Manage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="50" column="27" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Administration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/Administration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="89" lean-forward="false" selection-start-line="19" selection-start-column="89" selection-end-line="19" selection-end-column="89" />
+            <state relative-caret-position="391">
+              <caret line="32" column="36" lean-forward="false" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,67 +133,11 @@
       <file leaf-file-name="AddNewServer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/GUI/AddNewServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="36" column="55" lean-forward="false" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
+            <state relative-caret-position="682">
+              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="33" column="16" lean-forward="false" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Base.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/Base.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="170" column="44" lean-forward="false" selection-start-line="170" selection-start-column="44" selection-end-line="170" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5639#5647#0" expanded="true" />
-                <element signature="e#6261#6273#0" expanded="true" />
-                <element signature="method#okAlert#0;class#Base#0" expanded="false" />
-                <element signature="method#cancelAlert#0;class#Base#0" expanded="false" />
-                <element signature="e#8391#8392#0" expanded="true" />
-                <element signature="e#8439#8440#0" expanded="true" />
-                <element signature="e#8478#8479#0" expanded="true" />
-                <element signature="e#8528#8529#0" expanded="true" />
-                <element signature="e#11212#11213#0" expanded="true" />
-                <element signature="e#11279#11280#0" expanded="true" />
-                <element signature="e#11322#11323#0" expanded="true" />
-                <element signature="e#11402#11403#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/LoginPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding>
-                <element signature="method#LoginPage#0;class#LoginPage#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GUITest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GUITest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="41" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -174,6 +156,9 @@
       <find>wait</find>
       <find>mouse</find>
       <find>List</find>
+      <find>ListSe</find>
+      <find>send</find>
+      <find>waitUntilD</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -230,11 +215,11 @@
         <option value="$PROJECT_DIR$/src/test/java/GUI/AddServer.java" />
         <option value="$PROJECT_DIR$/GUITest.xml" />
         <option value="$PROJECT_DIR$/src/test/java/GUI/ManageTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/GUI/LogFreestor.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/PageObject/MainPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/PageObject/Administration.java" />
         <option value="$PROJECT_DIR$/src/main/java/GUI/Base.java" />
+        <option value="$PROJECT_DIR$/src/test/java/GUI/LogFreestor.java" />
         <option value="$PROJECT_DIR$/src/test/java/GUI/AddNewServer.java" />
       </list>
     </option>
@@ -353,6 +338,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="PageObject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="comFreestor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="comFreestor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Utility" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -396,18 +389,18 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\IdeaProjects\comFreestor\src\main\java\Reports" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\IdeaProjects\comFreestor\src\test\Resource" />
-      <recent name="C:\Users\Administrator\IdeaProjects\comFreestor\src\main" />
-      <recent name="C:\Users\Administrator\IdeaProjects\comFreestor\src\main\java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="PageObject" />
       <recent name="RestAPI" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\IdeaProjects\comFreestor\src\main\java\Reports" />
       <recent name="C:\Users\Administrator\IdeaProjects\comFreestor\src\test\Resource" />
+      <recent name="C:\Users\Administrator\IdeaProjects\comFreestor\src\main" />
+      <recent name="C:\Users\Administrator\IdeaProjects\comFreestor\src\main\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -750,11 +743,11 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AddNewServer - 2018.02.07 at 16h 54m 23s.xml">
+    <history-entry file="AddNewServer - 2018.02.12 at 11h 41m 54s.xml">
       <configuration name="AddNewServer" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddServer - 2018.02.07 at 16h 35m 26s.xml">
-      <configuration name="AddServer" configurationId="JUnit" />
+    <history-entry file="AddNewServer - 2018.02.12 at 11h 46m 00s.xml">
+      <configuration name="AddNewServer" configurationId="TestNG" />
     </history-entry>
     <history-entry file="ManageTest_Login - 2018.01.31 at 14h 33m 51s.xml">
       <configuration name="ManageTest.Login" configurationId="TestNG" />
@@ -800,10 +793,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2278481" sideWeight="0.18446602" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18046875" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2278481" sideWeight="0.815534" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.074433655" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42002302" sideWeight="0.815534" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.496875" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.9470656" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23381877" sideWeight="0.49399656" order="0" side_tool="false" content_ui="combo" />
@@ -1087,6 +1080,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/Manage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="57" column="1" lean-forward="true" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1095,32 +1098,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/Base.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1412">
+          <caret line="287" column="62" lean-forward="false" selection-start-line="287" selection-start-column="62" selection-end-line="287" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#5639#5647#0" expanded="false" />
+            <element signature="method#okAlert#0;class#Base#0" expanded="false" />
+            <element signature="method#cancelAlert#0;class#Base#0" expanded="false" />
+            <element signature="e#8534#8535#0" expanded="false" />
+            <element signature="e#8582#8583#0" expanded="false" />
+            <element signature="e#8621#8622#0" expanded="false" />
+            <element signature="e#8671#8672#0" expanded="false" />
+            <element signature="e#11369#11370#0" expanded="false" />
+            <element signature="e#11436#11437#0" expanded="false" />
+            <element signature="e#11479#11480#0" expanded="false" />
+            <element signature="e#11559#11560#0" expanded="false" />
+            <element signature="e#11623#11624#0" expanded="false" />
+            <element signature="e#11665#11666#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/GUI/ManageTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="773">
           <caret line="58" column="3" lean-forward="false" selection-start-line="58" selection-start-column="3" selection-end-line="58" selection-end-column="3" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/Manage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="50" column="27" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/GUI/LogFreestor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1135,40 +1141,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/PageObject/Administration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="89" lean-forward="false" selection-start-line="19" selection-start-column="89" selection-end-line="19" selection-end-column="89" />
+        <state relative-caret-position="463">
+          <caret line="43" column="33" lean-forward="false" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/Base.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/GUI/LogFreestor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="170" column="44" lean-forward="false" selection-start-line="170" selection-start-column="44" selection-end-line="170" selection-end-column="44" />
+        <state relative-caret-position="391">
+          <caret line="32" column="36" lean-forward="false" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5639#5647#0" expanded="true" />
-            <element signature="e#6261#6273#0" expanded="true" />
-            <element signature="method#okAlert#0;class#Base#0" expanded="false" />
-            <element signature="method#cancelAlert#0;class#Base#0" expanded="false" />
-            <element signature="e#8391#8392#0" expanded="true" />
-            <element signature="e#8439#8440#0" expanded="true" />
-            <element signature="e#8478#8479#0" expanded="true" />
-            <element signature="e#8528#8529#0" expanded="true" />
-            <element signature="e#11212#11213#0" expanded="true" />
-            <element signature="e#11279#11280#0" expanded="true" />
-            <element signature="e#11322#11323#0" expanded="true" />
-            <element signature="e#11402#11403#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/GUI/AddNewServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="36" column="55" lean-forward="false" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
+        <state relative-caret-position="682">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

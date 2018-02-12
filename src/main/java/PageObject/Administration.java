@@ -22,4 +22,25 @@ public class Administration extends Base {
     public WebElement superadminOp(int navigate){return ListSelectionByIndex(superadminOptions,navigate); }
 
 
+    // This for Add Server Form
+
+    @FindBy(xpath = "//input[@name='userName']") WebElement username;
+    @FindBy(xpath = "//input[@name='ipAddress']") WebElement ipAddress;
+    @FindBy(xpath = "//input[@name='passwd']") WebElement password;
+    @FindBy(xpath = "//button[@type='submit']") WebElement addButton;
+    @FindBy (css = ".modal-content.ui-resizable") WebElement modal;
+
+    public WebElement getUsername() {   return username;   }
+    public WebElement getIpAddress() {  return ipAddress;  }
+    public WebElement getPassword() {   return password;   }
+
+    public void addNewServer(String ipaddress, String username, String password ){
+        serverSuperadminOp(0).click();   //Click the Add Icon first
+        waitUntilVisible(modal);                  //Wait Until the modal Appear
+        keysInput(getIpAddress(),ipaddress);      // type the ip address
+        keysInput(getUsername(),username);        // type the username
+        keysInput(getPassword(),password);        // type the password
+        addButton.click();                        // click the submit button
+        waitUntilDisappear(modal,30);    // wait until disappear
+    }
 }

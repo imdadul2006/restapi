@@ -22,10 +22,6 @@ public class LogFreestor extends Base{
 
     @Test
     public void loginToFreestor(){
-        System.out.println(getfmsServer());
-        System.out.println(getfmsUserName());
-        System.out.println(getfmsPassword());
-
         LoginPage hp = new LoginPage(driver);
         waitUntilVisible(hp.getUserName());
         hp.getUserName().sendKeys(getfmsUserName());

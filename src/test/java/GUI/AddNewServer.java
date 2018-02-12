@@ -30,15 +30,17 @@ public class AddNewServer extends Base {
         login.loginToFreestor();
 
         /*Navigate to Administration Menu*/
-
         MainPage mp = new MainPage(driver);
         mp.navigateElement("ADMINISTRATION").click();
 
         /* Need to click on server item from menu option*/
-
         mouseClickByText("Servers");
 
+        //Adding server using Administration class
         Administration admins = new Administration(driver);
-        admins.serverSuperadminOp(0);
+        admins.addNewServer("10.8.25.32","root","IPStor101");
+        admins.addNewServer("10.8.25.86","root","IPStor101");
+
     }
+
 }

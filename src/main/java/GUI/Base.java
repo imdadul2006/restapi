@@ -168,11 +168,11 @@ public class Base {
 
     public WebElement ListSelectionByIndex(List<WebElement> list,int x) {
         System.out.println("List size : " + list.size());
-        List<WebElement> items = new ArrayList<WebElement>();
-        for (int i = 0; i<list.size();i++){
+        //List<WebElement> items = new ArrayList<WebElement>();
+      /*  for (int i = 0; i<list.size();i++){
             System.out.println("Index number "+i);
             list.get(i).click();
-        }
+        }*/
         return list.get(x);
     }
 
@@ -285,8 +285,8 @@ public class Base {
         wait.until(ExpectedConditions.visibilityOf(element));
     }
 
-    public void waitUntilDisappear(WebElement element,int x){
-        WebDriverWait wait = new WebDriverWait(driver, x);
+    public void waitUntilDisappear(WebElement element,int waitTime){
+        WebDriverWait wait = new WebDriverWait(driver, waitTime);
         wait.until(ExpectedConditions.invisibilityOf(element));
     }
 
@@ -315,6 +315,11 @@ public class Base {
     public void keysInput(String locator){
         driver.findElement(By.cssSelector(locator)).sendKeys(Keys.ENTER);
     }
+
+    public void keysInput(WebElement element,String sendKeys){
+        element.sendKeys(sendKeys);
+    }
+
     public String converToString(String st){
         String splitString ;
         splitString = StringUtils.join(StringUtils.splitByCharacterTypeCamelCase(st), ' ');
